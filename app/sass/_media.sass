@@ -1,0 +1,399 @@
+@import "vars"
+
+/*==========  Desktop First  ==========*/
+
+/* Large Devices, Wide Screens */
+@media only screen and (max-width : 1200px)
+  .menu li, .phone
+    margin: 0 20px 0 0
+
+  .about:after
+    width: 716px
+    height: 476px
+    top: auto
+    bottom: 0
+
+
+
+/* Medium Devices, Desktops */
+@media only screen and (max-width : 992px)
+  .logo-icon
+    font-size: 24px
+
+  .logo-text
+    font-size: 12px
+
+  .logo
+    max-width: 64px
+
+  .menu
+    margin: 0 auto
+    font-size: 16px
+
+  .work-company__content
+    max-width: 450px
+
+
+  .get:before
+    left: 23px
+
+  .get-box
+    font-size: 14px
+    max-width: 222px
+    h4
+      font-size: 16px
+
+  .get-content
+    max-width: 500px
+
+  .house-slider__box
+    max-width: 460px
+    height: 270px
+
+  .house .btn
+    margin: 50px auto 0
+
+  .house-slider .slick-current .house-slider__box
+    height: 390px
+    max-width: 629px
+
+  .house__box-content
+    padding: 30px 8px
+    font-size: 14px
+    flex-direction: column
+    align-items: flex-start
+    justify-content: flex-end
+    p
+      max-width: none
+      margin: 0 0 20px
+      padding: 19px 0 0
+      &:before
+        width: 159px
+
+  .about:after
+    width: 516px
+    height: 336px
+    left: -100px
+
+  .reviews-box
+    font-size: 14px
+    .box-text
+      font-size: 14px
+      padding: 0 0 0 20px
+
+  .reviews
+    h2
+      margin: 0 0 50px
+
+/* Small Devices, Tablets */
+@media only screen and (max-width : 850px)
+  header
+    padding: 30px 0
+    .phone, .menu, .btn-text
+      font-size: 14px
+
+  .work-company__img
+    width: 596px
+    height: 464px
+    top: auto
+    bottom: 0
+    left: -207px
+
+  .brands
+    padding: 80px 0
+
+
+@media only screen and (max-width : 768px)
+  header
+    padding: 30px 0
+    .phone, .menu, .btn-text
+      display: none
+    .btn
+      padding: 0
+      width: 30px
+      height: 30px
+    .btn-icon
+      position: relative
+      left: 0
+      top: 0
+      width: 13px
+      height: 19px
+
+    .logo
+      margin: 0 auto 0 0
+
+    .btn-burger
+      display: flex
+
+    .btn
+      box-shadow: 1px 1px 0 #F0AA70
+
+  main
+    padding: 137px 0 343px
+    &:before, &:after
+      width: 445px
+      height: 445px
+    &:before
+      width: 606px
+      height: 606px
+      bottom: auto
+      top: -210px
+      left: 50%
+      transform: translate(-50%,0)
+    &:after
+      top: 57px
+      left: 51px
+    .btn
+      margin: 30px 0 18px
+      &:after
+        width: 24px
+        height: 56px
+        background: url("../img/arrow-mob.svg") no-repeat center
+          size: 100%
+        top: -52px
+        right: 0
+
+  .description-text
+    font-size: 12px
+
+
+  .main-content
+    max-width: 302px
+
+  h1, h2
+    font-size: 24px
+
+  h3
+    font-size: 20px
+    margin: 0 0 15px
+
+  .box-text
+    font-size: 14px
+
+  h1
+    margin: 0 0 20px
+
+  .work-company
+    margin: -70px 0 0
+    padding: 50px 25px 280px
+    .box-text
+      margin: 20px 0 0
+    &:before
+      width: 786px
+      height: 110px
+    &:after
+      height: calc(100% - 22px)
+
+  .work-company__content
+    max-width: 261px
+    margin: 0
+
+  .work-company__img
+    width: 396px
+    height: 264px
+    left: -107px
+
+  .earnings
+    font-size: 24px
+    margin: 20px 0 0
+    max-width: 231px
+
+  .result-work
+    padding: 80px 0 398px
+    background: url("../img/bg3-mob.png") no-repeat center bottom
+      size: 100%
+    h2
+      padding: 0 0 25px
+      margin: 0 0 40px
+      &:before
+        width: 227px
+
+  .get-content
+    max-width: none
+    padding: 0 26px
+
+  .get
+    padding: 50px 0 600px
+    &:before
+      background: linear-gradient(180.35deg, #FFFFFF 55.45%, rgba(255, 255, 255, 0) 70.34%), url("../img/adv-bg.jpeg") no-repeat -500px 750px
+        size: 1440px
+    h2
+      margin: 0 0 40px
+
+  .get-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .get-box
+    margin: 0 0 30px
+    h4
+      margin: 15px 0 5px
+
+  .get-box__icon
+    width: 30px
+    height: 30px
+
+  .btn-question
+    margin: 36px 0 0
+    &:after
+      top: -64px
+      right: 0
+      width: 24px
+      height: 56px
+      background: url("../img/arrow-mob.svg") no-repeat center
+        size: 100%
+
+  .brands
+    h2
+      max-width: 301px
+
+  .brands-box
+    max-width: 47%
+    width: 100%
+
+  .advantages-box
+    max-width: none
+    width: 100%
+    margin: 0 0 30px
+
+  .house
+    padding: 0 0 50px
+
+  .house-slider
+    margin: 50px 0 35px
+
+  .house-slider__box
+    max-width: 340px
+    height: 231px
+    border-radius: 10px
+    overflow: hidden
+
+  .house-slider .slick-current .house-slider__box
+    height: 312px
+    max-width: 450px
+
+  .house-slider .slick-current
+    margin: 0 -90px
+
+  .about-box
+    font-size: 14px
+    max-width: 157px
+
+  .about-box-num
+    font-size: 24px
+
+  .about-content
+    max-width: 330px
+
+  .about-content .box-text:before
+    width: 218px
+
+  .reviews-box
+    margin: 0 0 30px
+    padding: 30px
+    flex-direction: column
+    align-items: flex-start
+    .box-text
+      width: 100%
+      padding: 0
+      margin: 25px 0 0
+
+/* Extra Small Devices, Phones */
+@media only screen and (max-width : 690px)
+  .about-content
+    padding: 0 27px
+    max-width: none
+
+  .about
+    padding: 50px 0 276px
+    h2
+      margin: 0 0 40px
+      text-align: left
+    &:before
+      left: 22px
+    &:after
+      width: 413px
+      height: 276px
+      left: -51px
+
+  .about-content .box-text
+    margin: 20px 0 0
+
+  .about-wrapper
+    flex-direction: column
+    align-items: flex-start
+
+  .about-box-num
+    margin: 0
+
+@media only screen and (max-width : 576px)
+  .advantages-box
+    padding: 25px 25px 30px
+    background: linear-gradient(359.48deg, #FFFFFF 40.68%, rgba(255, 255, 255, 0) 69.44%), url("../img/adv1.jpeg") no-repeat center
+      size: cover
+    align-items: flex-end
+    font-size: 14px
+
+  .advantages-box__content
+    max-width: none
+    width: 100%
+
+  .advantages-box2
+    background: linear-gradient(359.48deg, #FFFFFF 40.68%, rgba(255, 255, 255, 0) 69.44%), url("../img/adv2.jpeg") no-repeat center
+      size: cover
+
+  .advantages-box3
+    background: linear-gradient(359.48deg, #FFFFFF 40.68%, rgba(255, 255, 255, 0) 69.44%), url("../img/adv3.jpg") no-repeat center
+      size: cover
+
+  .advantages-box4
+    background: linear-gradient(359.48deg, #FFFFFF 40.68%, rgba(255, 255, 255, 0) 69.44%), url("../img/adv4.jpeg") no-repeat center
+      size: cover
+
+  .button-group .btn
+    margin: 20px auto 0
+
+  .house-slider__box
+    max-width: 218px
+    height: 231px
+    border-radius: 10px
+    overflow: hidden
+
+  .house-slider .slick-current .house-slider__box
+    height: 312px
+    max-width: 294px
+
+  .reviews-box
+    width: calc(100% + 60px)
+    margin: 0 -30px 30px 0
+    &:nth-child(even)
+      margin: 0 0 30px -30px
+
+  .contacts-box
+    padding: 30px
+    margin: 0 -30px -67px 0
+    width: calc(100% + 60px)
+
+  .contacts
+    padding: 282px 0 0
+
+  .contacts-item
+    font-size: 14px
+    .phone
+      font-size: 14px
+
+  .list-social
+    margin: 40px 0 0
+
+  footer
+    padding: 146px 0 50px
+    .container
+      flex-direction: column
+      align-items: flex-start
+    .logo
+      margin: 0 0 50px
+    .list-social
+      margin: 50px 0 0
+
+  .modal__wrapper h2
+    font-size: 22px
