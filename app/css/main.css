@@ -667,29 +667,12 @@ main {
 
 .house-slider {
   margin: 80px 0 50px; }
-  .house-slider .slick-current {
-    margin: 0 -190px; }
-    .house-slider .slick-current .house-slider__box {
-      margin: 0 auto;
-      height: 590px;
-      max-width: 829px;
-      position: relative;
-      z-index: 1;
-      cursor: pointer;
-      border-radius: 10px;
-      overflow: hidden; }
-      .house-slider .slick-current .house-slider__box:hover .house__box-content {
-        display: -webkit-box;
-        display: -ms-flexbox;
-        display: flex; }
-        .house-slider .slick-current .house-slider__box:hover .house__box-content:before {
-          display: block; }
 
 .slick-slide {
   outline: none; }
 
 .house-slider__box {
-  max-width: 660px;
+  max-width: 97%;
   width: 100%;
   height: 470px;
   position: relative;
@@ -702,12 +685,18 @@ main {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin: 49px 0 0; }
+  margin: 0 auto; }
   .house-slider__box img {
     width: 100%;
     height: 100%;
     -o-object-fit: cover;
        object-fit: cover; }
+  .house-slider__box:hover .house__box-content {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex; }
+    .house-slider__box:hover .house__box-content:before {
+      display: block; }
 
 .house__box-content {
   position: absolute;
@@ -715,7 +704,7 @@ main {
   bottom: 0;
   width: 100%;
   height: 100%;
-  padding: 60px;
+  padding: 20px;
   -webkit-box-align: end;
       -ms-flex-align: end;
           align-items: flex-end;
@@ -725,7 +714,9 @@ main {
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
   color: #081A2D;
-  font-size: 20px; }
+  font-size: 20px;
+  -webkit-transition: .3s ease;
+  transition: .3s ease; }
   .house__box-content:before {
     content: '';
     position: absolute;
@@ -753,7 +744,9 @@ main {
       height: 4px;
       background: -webkit-gradient(linear, left top, right top, from(#ff9f50), to(#ffdf8e));
       background: linear-gradient(to right, #ff9f50 0%, #ffdf8e 100%);
-      border-radius: 2px; }
+      border-radius: 2px;
+      -webkit-transition: .3s ease;
+      transition: .3s ease; }
   .house__box-content span {
     font-weight: 300;
     display: inline-block;
@@ -1213,6 +1206,28 @@ footer {
 
 /*==========  Desktop First  ==========*/
 /* Large Devices, Wide Screens */
+@media only screen and (max-width: 1480px) {
+  .house__box-content {
+    font-size: 18px; }
+    .house__box-content p {
+      max-width: 375px; } }
+
+@media only screen and (max-width: 1260px) {
+  .house__box-content {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: end;
+        -ms-flex-pack: end;
+            justify-content: flex-end; }
+    .house__box-content p {
+      max-width: none;
+      margin: 0 0 20px; } }
+
 @media only screen and (max-width: 1200px) {
   .menu li, .phone {
     margin: 0 20px 0 0; }
@@ -1245,13 +1260,10 @@ footer {
   .get-content {
     max-width: 500px; }
   .house-slider__box {
-    max-width: 460px;
+    max-width: 96%;
     height: 270px; }
   .house .btn {
     margin: 50px auto 0; }
-  .house-slider .slick-current .house-slider__box {
-    height: 390px;
-    max-width: 629px; }
   .house__box-content {
     padding: 30px 8px;
     font-size: 14px;
@@ -1438,15 +1450,9 @@ footer {
   .house-slider {
     margin: 50px 0 35px; }
   .house-slider__box {
-    max-width: 340px;
     height: 231px;
     border-radius: 10px;
     overflow: hidden; }
-  .house-slider .slick-current .house-slider__box {
-    height: 312px;
-    max-width: 450px; }
-  .house-slider .slick-current {
-    margin: 0 -90px; }
   .about-box {
     font-size: 14px;
     max-width: 157px; }
@@ -1524,13 +1530,9 @@ footer {
   .button-group .btn {
     margin: 20px auto 0; }
   .house-slider__box {
-    max-width: 218px;
     height: 231px;
     border-radius: 10px;
     overflow: hidden; }
-  .house-slider .slick-current .house-slider__box {
-    height: 312px;
-    max-width: 294px; }
   .reviews-box {
     width: calc(100% + 60px);
     margin: 0 -30px 30px 0; }

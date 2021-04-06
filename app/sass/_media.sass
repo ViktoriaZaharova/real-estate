@@ -3,6 +3,21 @@
 /*==========  Desktop First  ==========*/
 
 /* Large Devices, Wide Screens */
+@media only screen and (max-width : 1480px)
+  .house__box-content
+    font-size: 18px
+    p
+      max-width: 375px
+
+@media only screen and (max-width : 1260px)
+  .house__box-content
+    flex-direction: column
+    align-items: center
+    justify-content: flex-end
+    p
+      max-width: none
+      margin: 0 0 20px
+
 @media only screen and (max-width : 1200px)
   .menu li, .phone
     margin: 0 20px 0 0
@@ -47,15 +62,12 @@
     max-width: 500px
 
   .house-slider__box
-    max-width: 460px
+    max-width: 96%
     height: 270px
 
   .house .btn
     margin: 50px auto 0
 
-  .house-slider .slick-current .house-slider__box
-    height: 390px
-    max-width: 629px
 
   .house__box-content
     padding: 30px 8px
@@ -263,17 +275,10 @@
     margin: 50px 0 35px
 
   .house-slider__box
-    max-width: 340px
     height: 231px
     border-radius: 10px
     overflow: hidden
 
-  .house-slider .slick-current .house-slider__box
-    height: 312px
-    max-width: 450px
-
-  .house-slider .slick-current
-    margin: 0 -90px
 
   .about-box
     font-size: 14px
@@ -354,14 +359,10 @@
     margin: 20px auto 0
 
   .house-slider__box
-    max-width: 218px
     height: 231px
     border-radius: 10px
     overflow: hidden
 
-  .house-slider .slick-current .house-slider__box
-    height: 312px
-    max-width: 294px
 
   .reviews-box
     width: calc(100% + 60px)
